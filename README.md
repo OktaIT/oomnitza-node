@@ -12,7 +12,7 @@ This API is a small layer that handles talking to the Oomnitza API. Primarily:
 This document will refer to itself as "this API" and the Oomnitza API as simply, "Oomnitza".
 
 # Usage
-To get started, you MUST have an already existing account with Oomnitza.  Currently a [trial account](https://wiki.oomnitza.com/wiki/Signing_Up_for_Trial_Access. will suffice. 
+To get started, you MUST have an already existing account with Oomnitza.  Currently a [trial account](https://wiki.oomnitza.com/wiki/Signing_Up_for_Trial_Access) will suffice. 
 You should also need to familiarize yourself with how Oomnitza responds to programmatic requests. You can do so [here](https://wiki.oomnitza.com/wiki/REST_API).
 
 
