@@ -1,0 +1,20 @@
+{
+    "name": "oomnitza-node",
+    "description": "Interfaces with the Oomnitza API via NodeJS",
+    "author": "Josh Johnson <jjohnson@okta.com>",
+    "dependencies": {
+        "request": "2.29.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/oktait/oomnitza-node.git"
+    },
+    "bugs": {
+        "url": "http://github.com/oktait/oomnitza-node/issues"
+    },
+    "main": "index.js",
+    "version": "0.1.0",
+    "engines": {
+        "node": "*"
+    }
+}
