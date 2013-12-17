@@ -44,8 +44,8 @@ function main() {
     oom.addUser(newProfile, function(d) {
         checking("addUser");
         d.should.have.property("success", true);
-        newUserId = d.resp.id;
         ok();
+        newUserId = d.resp.id;
         doStuffWithNewUser();
     });
     oom.addLocation(newLocation, function(d) {
@@ -53,8 +53,8 @@ function main() {
         d.should.have.property("success", true);
         var resp = d.resp;
         resp.should.have.property("id");
-        newLocationId = d.resp.id;
         ok();
+        newLocationId = d.resp.id;
         doStuffWithLocation();
     });
     oom.getLocationFields(function(d) {
@@ -69,10 +69,20 @@ function main() {
         d.should.have.property("resp").with.property("rows");
         ok();
     });
+    oom.getUsers(function(d) {
+        checking("getUsers");
+        d.should.have.property("success", true);
+        d.should.have.property("resp").instanceof(Array);
+        ok();
+    });
 }
 
 function doStuffWithNewUser() {
-    
+    oom.getUser(newUserId, function(d) {
+        checking("getUser");
+        d.should.have.property("success", true);
+        ok();
+    });
 }
 
 function doStuffWithLocation() {
