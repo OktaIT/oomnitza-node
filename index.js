@@ -1,2 +1,2 @@
 
-modules.export = require("./lib/ommnitza-node");
+module.exports = require("./lib/oomnitza-node");
